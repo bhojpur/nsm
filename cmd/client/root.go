@@ -101,7 +101,7 @@ func init() {
 			nsmKubeconfig = filepath.Join(home, ".kube", "config")
 		}
 	}
-	nsmNamespace := os.Getenv("nsm_K8S_NAMESPACE")
+	nsmNamespace := os.Getenv("NSM_K8S_NAMESPACE")
 	nsmLabelSelector := os.Getenv("NSM_K8S_LABEL")
 	if nsmLabelSelector == "" {
 		nsmLabelSelector = "app.kubernetes.io/name=nsm"
